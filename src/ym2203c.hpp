@@ -154,7 +154,7 @@ class YM2203C {
         digitalWrite(_hc595_sck, LOW);
 		shiftOut(_hc595_si, _hc595_sck, MSBFIRST, dat);
 		// ***** needed if cascading 74HC595. *****
-        shiftOut(_hc595_si, _hc595_sck, MSBFIRST, 0);
+		//shiftOut(_hc595_si, _hc595_sck, MSBFIRST, 0);
         digitalWrite(_hc595_rck, HIGH);
         digitalWrite(_ym2203_wr, WRITE_ENABLE);
 
